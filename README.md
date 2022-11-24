@@ -75,3 +75,26 @@ code 1.txt
 
 git add .
 git commit -m "Se puso Hola en el archivo 1.txt"
+
+##### 19. Posicionarse en la rama v0.2 y poner Adios en el fichero "1.txt" y hacer commit.
+git checkout v0.2
+code 1.txt
+> Dentro del archivo se agrega lo siguiente:
+> Adios
+
+git add .
+git commit -m "Se puso Adios en el archivo 1.txt"
+##### 20. Posicionarse de nuevo en la rama master y hacer un merge con la rama v0.2
+git checkout master
+
+##### Listado de ramas
+##### 21. Listar las ramas con merge y las ramas sin merge.
+git branch --merged
+git branch --no-merged
+
+##### Arreglar conflicto
+##### 22. Arreglar el conflicto anterior y hacer un commit.
+code 1.txt
+Accept Both Changes
+git add .
+git commit -m "Conflito Arreglado"
