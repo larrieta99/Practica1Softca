@@ -62,3 +62,25 @@ touch 2.txt
 git add .
 git commit -m "Se creo rama v0.2 con un fichero 2.txt"
 git push origin v0.2
+##### 16. Posicionarse en la rama master.
+git checkout master
+##### Merge directo
+##### 17.Hacer un merge de la rama v0.2 en la rama master.
+git merge v0.2
+##### Merge con conflicto
+##### 18. En la rama master poner Hola en el fichero 1.txt y hacer commit.
+code 1.txt
+> Dentro del archivo se agrega lo siguiente:
+> Hola
+
+git add .
+git commit -m "Se puso Hola en el archivo 1.txt"
+
+##### 19. Posicionarse en la rama v0.2 y poner Adios en el fichero "1.txt" y hacer commit.
+git checkout v0.2
+code 1.txt
+> Dentro del archivo se agrega lo siguiente:
+> Adios
+
+git add .
+git commit -m "Se puso Adios en el archivo 1.txt"
