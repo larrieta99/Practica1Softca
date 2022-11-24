@@ -98,3 +98,12 @@ code 1.txt
 Accept Both Changes
 git add .
 git commit -m "Conflito Arreglado"
+##### Borrar rama
+##### 23. Crear un tag v0.2
+git tag v0.2
+##### 24. Borrar la rama v0.2
+git branch -d v0.2
+#####Listado de cambios
+##### 25. Listar los distintos commits con sus ramas y sus tags.
+git config --global alias.list 'log --oneline --decorate --graph --all'
+git list
